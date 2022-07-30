@@ -12,17 +12,57 @@ var interest = "what are you interested in?";
 var lastText = "Thank you for your attention!";
 
 var alertIntro = alert(intro);
-var answerFirstName = prompt(firstName);
-var answerLastName = prompt(lastName);
-var answerAddres = prompt(addres);
-var answerStudy = prompt(study);
-var answerGraetWish = prompt(graetWish);
-var answerWho = prompt(who);
-var answerMember = prompt(member);
-var answerFriend = prompt(friend);
-var answerBook = prompt(book);
-var answerInterest = prompt(interest);
+var answerFirstName = prompt(firstName).trim();
+var answerLastName = prompt(lastName).trim();
+var answerAddres = prompt(addres).trim();
+var answerStudy = prompt(study).trim();
+var answerGraetWish = prompt(graetWish).trim();
+var answerWho = prompt(who).trim();
+var answerMember = prompt(member).trim();
+var answerFriend = prompt(friend).trim();
+var answerBook = prompt(book).trim();
+var answerInterest = prompt(interest).trim();
 var alertLastText = alert(lastText);
+
+var paragraph = document.createElement("p");
+paragraph.textContent = ` ${'Malumot!'}`;
+document.body.appendChild(paragraph);
+var paragraph = document.createElement("p");
+paragraph.textContent = `Foydalanuvchi ismi, ${answerFirstName}`;
+document.body.appendChild(paragraph);
+var paragraph = document.createElement("p");
+paragraph.textContent = `Foydalanuvchi familiyasi , ${answerLastName}`;
+document.body.appendChild(paragraph);
+var paragraph = document.createElement("p");
+paragraph.textContent = `Foydalanuvchi familiyasi , ${answerLastName}`;
+document.body.appendChild(paragraph);
+var paragraph = document.createElement("p");
+paragraph.textContent = `Foydalanuvchi adresi, ${answerAddres}`;
+document.body.appendChild(paragraph);
+var paragraph = document.createElement("p");
+paragraph.textContent = `Foydalanuvchi qayerda oqishi, ${answerStudy}`;
+document.body.appendChild(paragraph);
+var paragraph = document.createElement("p");
+paragraph.textContent = `Foydalanuvchi orzusi, ${answerGraetWish}`;
+document.body.appendChild(paragraph);
+var paragraph = document.createElement("p");
+paragraph.textContent = `Foydalanuvchi oyilasidagilari, ${answerWho}`;
+document.body.appendChild(paragraph);
+var paragraph = document.createElement("p");
+paragraph.textContent = `Foydalanuvch oilada necha kishiligi, ${answerMember}`;
+document.body.appendChild(paragraph);
+var paragraph = document.createElement("p");
+paragraph.textContent = `Foydalanuvchi dostlari haqida, ${answerFriend}`;
+document.body.appendChild(paragraph);
+var paragraph = document.createElement("p");
+paragraph.textContent = `Foydalanuvchi kitobga qiziqishi, ${answerBook}`;
+document.body.appendChild(paragraph);
+var paragraph = document.createElement("p");
+paragraph.textContent = `Foydalanuvchi nimaga qiziqishi, ${answerInterest}`;
+document.body.appendChild(paragraph);
+var paragraph = document.createElement("p");
+paragraph.textContent = `${'Tamom'}`;
+document.body.appendChild(paragraph);
 
 console.log(`foydalanuvchi haqida malumot.
 
@@ -35,5 +75,5 @@ foydalanuvchi oyilasidagilari ${answerWho}.
 foydalanuvch oilada necha kishiligi ${answerMember}.
 foydalanuvchi dostlari haqida ${answerFriend}.
 foydalanuvchi kitobga qiziqishi ${answerBook}.
-foydalanvchi nimaga qiziqishi ${answerInterest}.
+foydalanuvchi nimaga qiziqishi ${answerInterest}.
 tugadi ${alertLastText}.`);
